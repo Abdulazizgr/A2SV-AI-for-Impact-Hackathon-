@@ -1,10 +1,3 @@
-
-# AI-Driven Job Qualifier and Recruiter Platform
-
-Welcome to the AI-Driven Job Qualifier and Recruiter Platform repository! This platform leverages advanced algorithms to personalize job matching, develop real-time skill development roadmaps, and provide tailored interview preparation support. This repository contains the source code, development history, and supporting materials for the platform.
-
-
-
 # AI-Driven Job Qualifier and Recruiter Platform
 
 Welcome to the AI-Driven Job Qualifier and Recruiter Platform repository! This platform leverages advanced algorithms to personalize job matching, develop real-time skill development roadmaps, and provide tailored interview preparation support. This repository contains the source code, development history, and supporting materials for the platform.
@@ -18,7 +11,7 @@ This repository is structured as follows:
 
 - **backend/**: This directory contains the backend code of the platform, including the API endpoints, database models, and business logic implemented in JavaScript using Node.js and Express.js.
 - **frontend/**: Here, you will find the frontend code for the platform, implemented using JavaScript, React, and Redux. This directory also includes the HTML, CSS, and JavaScript files for the user interface.
-- **models/**: This directory contains the AI models used by the platform to enhance its capabilities. The models are implemented using TensorFlow.js and other AI/ML libraries, playing a crucial role in job matching, skill development, and interview preparation.
+- **models/**: This directory contains the AI models used by the platform to enhance its capabilities. The models are implemented using TensorFlow.js and other AI libraries(API), playing a crucial role in job matching, skill development, and interview preparation.
 
 ## Purpose
 
