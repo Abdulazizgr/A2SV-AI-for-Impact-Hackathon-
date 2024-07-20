@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <style>
+      @media (max-width: 768px) {
+        .sidebar {
+          transform: translateX(-100%);
+          transition: transform 0.3s ease-in-out;
+        }
+
+        .sidebar.open {
+          transform: translateX(0);
+        }
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-100">
+    <div class="flex min-h-screen">
+      <!-- Sidebar -->
+      <div id="sidebar" class="w-1/5 bg-white shadow-md sidebar">
+        <div class="p-6">
+          <h1 class="text-xl font-bold">
+            <a href="landing.html">CareerSync</a>
+          </h1>
+          <ul class="mt-6">
+            <li class="my-4">
+              <a
+                href="#"
+                class="flex items-center text-blue-500"
+                onclick="navigateTo('home')"
+                ><span class="material-icons">home</span>
+                <span class="ml-2">Home</span></a
+              >
+            </li>
+            <li class="my-4">
+              <a
+                href="#"
+                class="flex items-center text-blue-500"
+                onclick="navigateTo('account')"
+                ><span class="material-icons">account_circle</span>
+                <span class="ml-2">Account</span></a
+              >
+            </li>
+            <li class="my-4">
+              <a
+                href="#"
+                class="flex items-center text-gray-700"
+                onclick="navigateTo('activities')"
+                ><span class="material-icons">calendar_today</span>
+                <span class="ml-2">Activities</span></a
+              >
+            </li>
+            <li class="my-4">
+              <a
+                href="#"
+                class="flex items-center text-gray-700"
+                onclick="navigateTo('report')"
+                ><span class="material-icons">bar_chart</span>
+                <span class="ml-2">Report</span></a
+              >
+            </li>
+            <li class="my-4">
+              <a
+                href="#"
+                class="flex items-center text-gray-700"
+                onclick="navigateTo('settings')"
+                ><span class="material-icons">settings</span>
+                <span class="ml-2">Settings</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Main content -->
+      <div class="flex-1 p-6 bg-white">
+        <div class="flex justify-between items-center">
+          <h2 class="text-2xl font-semibold">Welcome Abdallah</h2>
+          <div class="flex items-center">
+            <button
+              id="menu-toggle"
+              class="flex items-center text-gray-700 hover:text-gray-900 md:hidden"
+            >
+              <span class="material-icons">menu</span>
+            </button>
+            <button
+              class="ml-4 flex items-center text-gray-700 hover:text-gray-900"
+            >
+              <span class="material-icons">notifications</span>
+            </button>
+            <button
+              class="ml-4 flex items-center text-gray-700 hover:text-gray-900"
+            >
+              <span class="material-icons">account_circle</span>
+            </button>
+          </div>
+        </div>
+
+        <div id="content" class="mt-8 bg-gray-100 p-6 rounded-lg shadow-md">
+          <!-- Dynamic content will be loaded here -->
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById('menu-toggle')
+        .addEventListener('click', function () {
+          document.getElementById('sidebar').classList.toggle('open');
+        });
+
+      function navigateTo(page) {
+        const content = document.getElementById('content');
+
+        switch (page) {
+          case 'home':
+            content.innerHTML = `<h2 class="text-xl font-semibold">Home</h2><p>Welcome to the home page!</p>`;
+            break;
+          case 'account':
+            content.innerHTML = `
+                        <h2 class="text-xl font-semibold">Account</h2>
+                        <div class="flex flex-col md:flex-row mt-6">
+                            <div class="w-full md:w-1/4">
+                                <nav class="space-y-4">
+                                    <a href="#" class="block p-2 bg-white rounded shadow-md" onclick="navigateTo('profile')">My Profile</a>
+                                    <a href="#" class="block p-2 text-gray-700 hover:bg-white rounded shadow-md" onclick="navigateTo('security')">Security</a>
+                                    <a href="#" class="block p-2 text-gray-700 hover:bg-white rounded shadow-md" onclick="navigateTo('account-settings')">Account Settings</a>
+                                    <a href="#" class="block p-2 text-gray-700 hover:bg-white rounded shadow-md" onclick="navigateTo('privacy')">Privacy</a>
+                                    <a href="#" class="block p-2 text-gray-700 hover:bg-white rounded shadow-md" onclick="navigateTo('delete-account')">Delete Account</a>
+                                </nav>
+                            </div>
+                            <div class="w-full md:w-3/4 bg-white p-6 rounded-lg shadow-md mt-4 md:mt-0 md:ml-4">
+                                <div class="flex justify-between items-center">
+                                    <h3 class="text-xl font-semibold">My Profile</h3>
+                                    <button class="flex items-center text-blue-500 hover:text-blue-700">
+                                        <span class="material-icons"><a href="edit.html">edit</a></span>
+                                    </button>
+                                </div>
+                                <div class="flex mt-6">
+                                    <img src="path/to/profile-image.jpg" alt="Ema Stones" class="w-24 h-24 rounded-full">
+                                    <div class="ml-4">
+                                        <h4 class="text-lg font-semibold">Ema Stones</h4>
+                                        <p class="text-gray-500">Product Designer</p>
+                                        <p class="text-gray-500">New York, USA</p>
+                                    </div>
+                                </div>
+                                <div class="mt-6">
+                                    <h4 class="text-lg font-semibold">Personal Information</h4>
+                                    <div class="mt-4">
+                                        <p><strong>First Name:</strong> Ema</p>
+                                        <p><strong>Last Name:</strong> Stones</p>
+                                        <p><strong>Email Address:</strong> emastones@gmail.com</p>
+                                        <p><strong>Phone no:</strong> +91 1234567890</p>
+                                        <p><strong>Bio:</strong> Product Designer</p>
+                                    </div>
+                                </div>
+                                <div class="mt-6">
+                                    <h4 class="text-lg font-semibold">Address</h4>
+                                    <div class="mt-4">
+                                        <p><strong>Country:</strong> India</p>
+                                        <p><strong>City / State:</strong> New York</p>
+                                        <p><strong>Postal Code:</strong> 987654</p>
+                                        <p><strong>Tax Id:</strong> 9876542345</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+            break;
+          case 'profile':
+            content.innerHTML = `
+                        <h2 class="text-xl font-semibold">Profile</h2>
+                        <p>This is your profile page.</p>
+                    `;
+            break;
+          case 'security':
+            content.innerHTML = `
+                        <h2 class="text-xl font-semibold">Security</h2>
+                        <p>Manage your security settings here.</p>
+                    `;
+            break;
+          case 'account-settings':
+            content.innerHTML = `
+                        <h2 class="text-xl font-semibold">Account Settings</h2>
+                        <p>Update your account settings here.</p>
+                    `;
+            break;
+          case 'privacy':
+            content.innerHTML = `
+                        <h2 class="text-xl font-semibold">Privacy</h2>
+                        <p>Manage your privacy settings here.</p>
+                    `;
+            break;
+          case 'delete-account':
+            content.innerHTML = `
+                        <h2 class="text-xl font-semibold">Delete Account</h2>
+                        <p>If you want to delete your account, please contact support.</p>
+                    `;
+            break;
+          case 'activities':
+            content.innerHTML = `<h2 class="text-xl font-semibold">Activities</h2><p>Details of activities go here...</p>`;
+            break;
+          case 'report':
+            content.innerHTML = `<h2 class="text-xl font-semibold">Report</h2><p>Details of report go here...</p>`;
+            break;
+          case 'settings':
+            content.innerHTML = `<h2 class="text-xl font-semibold">Settings</h2><p>Settings content goes here...</p>`;
+            break;
+          default:
+            content.innerHTML = `<h2 class="text-xl font-semibold">Home</h2><p>Welcome to the home page!</p>`;
+            break;
+        }
+      }
+
+      // Default to home page
+      navigateTo('account');
+    </script>
+  </body>
+</html>
