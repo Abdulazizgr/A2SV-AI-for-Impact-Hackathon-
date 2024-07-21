@@ -25,8 +25,28 @@ This platform leverages the integration of multiple AI models to provide an enga
 - **Skill Development Roadmaps**: Analyzes current skills and recommends paths for improvement, providing targeted skill enhancement plans.
 - **Tailored Interview Preparation**: Provides personalized mentorship and practice questions to help candidates prepare for interviews.
 - **Bias Reduction in Candidate Screening**: Ensures fairness in candidate screening, focusing on qualifications and cultural fit to reduce bias and enhance hiring efficiency.
+  
+![landingpage](https://github.com/user-attachments/assets/62658966-ec5e-4c58-be0b-e3781c5ac9ee) 
 
-  ![landingpage](https://github.com/user-attachments/assets/fdd55641-8c08-4b2d-8204-d8f68446a511)
+![Tasks_we_do](https://github.com/user-attachments/assets/c850be1e-5eb4-4f65-a62f-820307e4b46a)
+
+![testimonials](https://github.com/user-attachments/assets/736feac1-36c5-49ea-8c36-158d69c91805)
+
+
+![contact us](https://github.com/user-attachments/assets/7d2fffa0-f465-46a6-83b4-ebc2d12b4b2c)
+
+![contact us2](https://github.com/user-attachments/assets/74e00ea9-e4fb-4bf4-b68d-8483ede1a030)
+
+
+![my_profile](https://github.com/user-attachments/assets/89392ce0-64ab-4350-8352-d7ef29a36708)
+
+![edit_profile](https://github.com/user-attachments/assets/2dbb91e2-9745-4ece-9682-19738542d0e1)
+
+![Account setting](https://github.com/user-attachments/assets/0d670db0-67ba-42f8-b92f-e9171f864d30)
+
+![Responsive](https://github.com/user-attachments/assets/934818b8-bedc-4d95-9428-fa953132b7d7)
+
+
 
 ## Authors
 
