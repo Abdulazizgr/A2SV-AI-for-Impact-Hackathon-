@@ -25,6 +25,9 @@ This platform leverages the integration of multiple AI models to provide an enga
 - **Skill Development Roadmaps**: Analyzes current skills and recommends paths for improvement, providing targeted skill enhancement plans.
 - **Tailored Interview Preparation**: Provides personalized mentorship and practice questions to help candidates prepare for interviews.
 - **Bias Reduction in Candidate Screening**: Ensures fairness in candidate screening, focusing on qualifications and cultural fit to reduce bias and enhance hiring efficiency.
+
+  ![landingpage](https://github.com/user-attachments/assets/fdd55641-8c08-4b2d-8204-d8f68446a511)
+
 ## Authors
 
 - [Abdulaziz](https://www.github.com/Abdulazizgr)
